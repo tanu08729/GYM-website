@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanu Fitness </title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('img/gy.jpg');
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 60px;
+            top: 43px;
+        }
+
+        .left img {
+            width: 63px;
+            padding: 6px;
+        }
+
+        .mid {
+            width: 36%;
+            /* border: 2px solid blue; */
+            margin: 19px auto;
+            padding: 5px;
+            display: block;
+        }
+
+        .left p {
+            text-align: center;
+            color: #d5a199;
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: #d5a199;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover,
+        .navbar li a .active {
+            text-decoration: underline;
+            color: rgb(247, 178, 178);
+        }
+
+        .right {
+            /* border: 2px solid blue; */
+            position: absolute;
+            right: 34px;
+            top: 43px;
+            display: inline-block;
+
+        }
+
+        .btn {
+            color: #f77272;
+            background-color: #f4b1b1;
+            margin: 4px;
+            padding: 3px;
+            font-size: 14px
+        }
+
+        .btn:hover {
+            color: red;
+        }
+
+        .container {
+      /* border: 2px solid red; */
+
+            text-align: center;
+            margin: 72px;
+            padding: 33px;
+            width: 33%;
+            border-radius: 10px;
+        }
+
+        
+
+        .formgroup {
+            margin: 17px;
+            padding: 3px;
+            font-size: 13px;
+            border-radius: 34px;
+            /* border: 2px solid red; */
+            display: block;
+            text-align: left;
+            width: 440px;
+            color: #f77272;
+
+        }
+        .container h3{
+            text-align: left;
+            color: #f77272;
+        }
+
+        #reset {
+            color: #f77272;
+            background-color: #f4b1b1;
+        }
+        .girl{
+            position: absolute;
+            right: 0px;
+            margin: 12px;
+            padding: 13px;
+            width: 10%;
+         ;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left ">
+            <!-- left box for logo  -->
+            <img src="img/gym.jpg">
+            <p> Tanu Gym </p>
+
+
+        </div>
+        <div class="mid">
+            <!-- mid box for navbar  -->
+            <!-- I am mid -->
+            <ul class="navbar">
+                <li><a href="#" class="active "> &nbsp; Home &nbsp; </a></li>
+                <li> <a href="#">About&nbsp;</a> </li>
+                <li> <a href="#">Fitness Calculator&nbsp; </a></li>
+                <li><a href="#">Contact me&nbsp;</a> </li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- Right box for button  -->
+
+            <button class="btn">Call us now </button>
+            <button class="btn">Email </button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h3> Join the best gym of mathura </h3>
+        <form action="noaction.php" class="form">
+
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your name ">
+            </div>
+            <div class="formgroup">
+                <input type="email" name="" placeholder="Enter your Emailid  ">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your address  ">
+            </div>
+            <div class="formgroup">
+                <input type="number" name="" placeholder="Enter your phoneno  ">
+            </div>
+            <div class="formgroup">
+                <input type="number" name="" placeholder="Enter your age  ">
+            </div>
+            <div class="formgroup">
+
+                <input type="radio" name="" value="Gender " id=" male "> Male
+                <input type="radio" name="" value="Gender " id=" female "> Female
+                <input type="radio" name="" value="Gender " id=" others "> Others
+            </div>
+            <button class="btn "> Submit </button>
+            <input type="reset" id="reset">
+    </div>
+    <img src = "img/gym1.jpg" class=" girl" alt="Girl image ">
+    </form>
+</body>
+
+</html>
